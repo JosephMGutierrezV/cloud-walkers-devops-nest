@@ -1,8 +1,8 @@
 {
   "name": "cloud-walkers-devops-nest",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Cloud Walkers DevOps NestJS Library",
-  "homepage": "https://github.com/JosephMGutierrezV/cloud-walkers-devops-nest/README.md",
+  "homepage": "https://github.com/JosephMGutierrezV/cloud-walkers-devops-nest/blob/main/README.md",
   "author": {
     "name": "Joseph Mauricio Gutierrez Valero",
     "email": "josephmauricio23@hotmail.com",

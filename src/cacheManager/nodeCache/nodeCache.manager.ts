@@ -1,5 +1,5 @@
 /** Node Cache */
-import NodeCache from 'node-cache';
+import * as NodeCache from 'node-cache';
 
 export class NodeCacheManager {
   /** Instancia de la clase NodeCacheManager - Singleton */
