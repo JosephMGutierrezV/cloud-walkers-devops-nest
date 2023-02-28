@@ -2,8 +2,8 @@ import { MailerService } from '@nestjs-modules/mailer';
 import { Injectable } from '@nestjs/common';
 import { Logger } from 'log4js';
 import { IDataRender, ISendMail } from 'src/common/interfaces/interfaces';
-import { LoggerService } from 'src/log';
 import * as ejs from 'ejs';
+import { LoggerService } from '../../log/logger.service';
 
 @Injectable()
 export class MailService {

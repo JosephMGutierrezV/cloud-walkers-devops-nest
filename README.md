@@ -23,3 +23,7 @@ Visit the [Cloud Walkers DevOps Website](https://cloud-walkers-devops.com/projec
 - Add commont
 - Add RabbitMQModule
 - Add MailModule
+
+### v.0.0.3
+
+- fix import

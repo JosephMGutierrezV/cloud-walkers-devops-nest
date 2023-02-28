@@ -1,6 +1,6 @@
 import { MailerService } from '@nestjs-modules/mailer';
 import { Test, TestingModule } from '@nestjs/testing';
-import { LoggerService } from 'src/log';
+import { LoggerService } from '../../log/logger.service';
 import { MailService } from './mail.service';
 
 describe('MailService', () => {
