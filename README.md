@@ -12,5 +12,14 @@ Visit the [Cloud Walkers DevOps Website](https://cloud-walkers-devops.com/projec
 
 ## Version log
 
-- v 0.0.1
-Init Library
+### v.0.0.1
+
+- Init lib
+  
+### v.0.0.2
+
+- Add LoggerModule
+- Add CacheModule
+- Add commont
+- Add RabbitMQModule
+- Add MailModule

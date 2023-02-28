@@ -1,10 +1,31 @@
-import { Module } from '@nestjs/common';
-import { CloudWalkersController } from './cloud-walkers.controller';
-import { CloudWalkersService } from './cloud-walkers.service';
+import { DynamicModule, Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { CacheManagerModule } from './cacheManager';
+import { ICustomOptions } from './common/interfaces/interfaces';
+import { LoggerModule } from './log';
+import { MailModule } from './mail/mail.module';
+import { RabbitMQModule } from './rabbitMQ';
 
-@Module({
-  imports: [],
-  controllers: [CloudWalkersController],
-  providers: [CloudWalkersService],
-})
-export class CloudWalkersModule {}
+@Module({})
+export class CloudWalkersModule {
+  static forRoot(options: ICustomOptions): DynamicModule {
+    return {
+      module: CloudWalkersModule,
+      imports: [
+        ConfigModule.forRoot({
+          envFilePath: options.envFilePath,
+          isGlobal: options.isGlobal,
+          load: options.load,
+          validationSchema: options.validationSchema,
+        }),
+        LoggerModule,
+        CacheManagerModule,
+        RabbitMQModule,
+        MailModule,
+      ],
+      controllers: [],
+      providers: [],
+      exports: [LoggerModule, CacheManagerModule, RabbitMQModule, MailModule],
+    };
+  }
+}
