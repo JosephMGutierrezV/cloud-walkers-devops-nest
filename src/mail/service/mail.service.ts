@@ -27,6 +27,7 @@ export class MailService {
       });
     } catch (errorSendMail) {
       this.log.error(errorSendMail);
+      throw errorSendMail;
     }
   }
 
@@ -35,6 +36,7 @@ export class MailService {
       return await ejs.renderFile(dataRender.filePath, dataRender.data);
     } catch (errorRenderTemplate) {
       this.log.error(errorRenderTemplate);
+      throw errorRenderTemplate;
     }
   }
 }

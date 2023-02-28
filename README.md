@@ -35,3 +35,7 @@ Visit the [Cloud Walkers DevOps Website](https://cloud-walkers-devops.com/projec
 ### v.0.0.5
 
 - fix node cache
+
+### v.0.0.6
+
+- fix throw email
