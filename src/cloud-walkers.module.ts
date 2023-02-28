@@ -4,7 +4,6 @@ import { CacheManagerModule } from './cacheManager';
 import { ICustomOptions } from './common/interfaces/interfaces';
 import { LoggerModule } from './log';
 import { MailModule } from './mail/mail.module';
-import { RabbitMQModule } from './rabbitMQ';
 
 @Module({})
 export class CloudWalkersModule {
@@ -20,12 +19,11 @@ export class CloudWalkersModule {
         }),
         LoggerModule,
         CacheManagerModule,
-        RabbitMQModule,
         MailModule,
       ],
       controllers: [],
       providers: [],
-      exports: [LoggerModule, CacheManagerModule, RabbitMQModule, MailModule],
+      exports: [LoggerModule, CacheManagerModule, MailModule],
     };
   }
 }

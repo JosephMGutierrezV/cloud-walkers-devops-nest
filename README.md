@@ -39,3 +39,7 @@ Visit the [Cloud Walkers DevOps Website](https://cloud-walkers-devops.com/projec
 ### v.0.0.6
 
 - fix throw email
+
+### v.0.0.7
+
+- fix import docker rabbitMQ
