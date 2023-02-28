@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 /** Servicio logger */
 
 import { Logger } from 'log4js';
-import { LoggerService } from 'src/log/logger.service';
+import { LoggerService } from '../../log/logger.service';
 
 /** Otras importaciones */
 const amqp = require('amqplib');
